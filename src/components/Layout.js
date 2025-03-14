@@ -1,4 +1,5 @@
 import {Box, Container, Typography} from "@mui/material";
+import Navbar from "./Navbar";
 
 const Layout = ({ children}) => {
 
@@ -6,6 +7,7 @@ return (
 
 <div>
   <Box>
+      <Navbar/>
       <Container>
           {children}
       </Container>
