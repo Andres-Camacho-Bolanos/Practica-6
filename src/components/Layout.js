@@ -18,7 +18,6 @@ return (
                 Derechos Reservados
             </Typography>
     </Box>
-
 </div>
 
 )};

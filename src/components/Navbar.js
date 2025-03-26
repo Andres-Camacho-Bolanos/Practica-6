@@ -1,27 +1,19 @@
-import {
-    AppBar,
-    Toolbar, Typography
-} from "@mui/material";
+
+import {AppBar, Button, Toolbar, Typography} from "@mui/material";
 import Sidebar from "./Sidebar";
-import MenuIcon from '@mui/icons-material/Menu';
 
-
-const Navbar = () => {
-
-
-          return (
-
-    <AppBar className="Barra" position="static">
-        <Toolbar>
-            <Sidebar/>
-            <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-                Bobbers Motors Company
-            </Typography>
-            <MenuIcon/>
-        </Toolbar>
-    </AppBar>
-
-  )};
-
+const Navbar = ({}) => {
+    return (
+        <AppBar className="Barra" position="static">
+            <Toolbar>
+                <Sidebar />
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                    Monas Chinas
+                </Typography>
+                <Button color="inherit">Login</Button>
+            </Toolbar>
+        </AppBar>
+    );
+};
 
 export default Navbar;
