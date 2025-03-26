@@ -1,4 +1,3 @@
-import Layout from "./Layout";
 import PokemonCard from "./PokemonCard";
 
 const About = () => {
@@ -9,7 +8,7 @@ const About = () => {
         <div>
             {data.items.map((item, index) => (<PokemonCard item = {item}/>))}
         </div>
-    )
+)
 };
 
 export default About;
