@@ -4,7 +4,7 @@ const Home = () => {
 return (
     <div>
         <h1>
-            Pagina Principal
+            Página Principal
         </h1>
 
         <Carousel />
