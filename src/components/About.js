@@ -19,9 +19,9 @@ const About = () => {
     return (
         <div>
             <Box sx={{ flexGrow: 1 }}>
-                <Grid2 container spacing={2}>
-                        <Grid2 item xs={6} md={3} key={item.id}>
-                            <Item>
+                <Grid2 container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} justifyContent="center" alignContent="center">
+                    <Grid2 xs={12} sm={6} md={6} display="flex" justifyContent="center">
+                    <Item size={8}>
                             {data.items.map((item, index) => (<PokemonCard item = {item}/>))}
                             </Item>
                     </Grid2>

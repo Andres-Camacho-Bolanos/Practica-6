@@ -1,10 +1,12 @@
 import {Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography} from "@mui/material";
+import { Link } from "react-router-dom";
+
 
 const PokemonCard = ({item}) => {
     return ( <Card sx={{ maxWidth: 345 }}>
         <CardActionArea>
             <Box>
-                <img src={item.sprites.front_default}/>
+                <img src={item.sprites.front_default} alt="item.name"/>
             </Box>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -20,10 +22,14 @@ const PokemonCard = ({item}) => {
         </CardActionArea>
         <CardActions>
             <Button size="small" color="primary">
-                Share
+                <Link to={`/pokemon/${item.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+
+                    <a>Detalles</a>
+                </Link>
             </Button>
         </CardActions>
     </Card>);
 }
+
 
 export default PokemonCard;
